@@ -1,0 +1,5 @@
+[init]
+	defaultBranch = main
+[user]
+	email = hello@nascentmaker.com
+	name = NascentMaker
