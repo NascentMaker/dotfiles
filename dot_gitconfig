@@ -3,3 +3,6 @@
 [user]
 	email = hello@nascentmaker.com
 	name = NascentMaker
+
+[include]
+	path = ~/.gitinclude
