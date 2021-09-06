@@ -1,3 +1,3 @@
 # dotfiles
 
-My configuration for most Linux machines I use. Utilizes chezmoi.
+Configuration files for Raspberry Pi running Manjaro+Sway.
