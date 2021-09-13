@@ -6,9 +6,14 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
+Plug 'mattn/emmet-vim'
 Plug('cespare/vim-toml', {branch = 'main'})
 Plug 'elzr/vim-json'
 Plug 'gabrielelana/vim-markdown'
+Plug 'sirtaj/vim-openscad'
+Plug 'leafOfTree/vim-svelte-plugin'
+Plug 'digitaltoad/vim-pug'
+Plug 'leafgarland/typescript-vim'
 
 vim.call('plug#end')
 
