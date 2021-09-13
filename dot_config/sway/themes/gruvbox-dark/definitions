@@ -3,8 +3,8 @@
 
 
 # some global theme specific variables
-set $gtk-theme gruvbox-dark-gtk
-set $icon-theme gruvbox-dark-icons-gtk
+set $gtk-theme Gruvbox-Material-Dark
+set $icon-theme Gruvbox-Material-Dark
 set $cursor-theme xcursor-breeze
 set $gui-font Roboto 11
 set $term-font RobotoMono Nerd Font 14

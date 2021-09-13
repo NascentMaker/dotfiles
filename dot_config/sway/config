@@ -5,14 +5,13 @@
 # Read `man 5 sway` for a complete reference.
 
 # styles - set the folder for your theme defination file
-#set $theme /usr/share/sway/themes/matcha-green
 set $theme ~/.config/sway/themes/gruvbox-dark
-
-#theme variables
-include $theme/definitions
 
 # global variables
 include /etc/sway/definitions
+
+#theme variables
+include $theme/definitions
 
 # user variables
 include $HOME/.config/sway/definitions.d/*.conf
