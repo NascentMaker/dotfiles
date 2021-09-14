@@ -1,7 +1,7 @@
 # some global theme specific variables
 set $gtk-theme oomox-gruvmox-dark-soft-green
 set $icon-theme oomox-gruvmox-dark-soft-green
-set $cursor-theme xcursor-breeze
+set $cursor-theme xcursor-breeze-snow
 set $gui-font Roboto 11
 set $term-font RobotoMono Nerd Font 14
 set $kvantum-theme Matchama-Dark
@@ -9,22 +9,22 @@ set $kvantum-theme Matchama-Dark
 ## Base16 oomox-gruvmox-dark-soft-green
 # Author: oomox-gruvmox-dark-soft-green
 
-set $base00 #282828
-set $base01 #1d2021
-set $base02 #928374
-set $base03 #89816d
-set $base04 #3c3c3c
-set $base05 #ebdbb2
-set $base06 #ebdbb2
-set $base07 #a89984
-set $base08 #cc241d
-set $base09 #fabd2f
-set $base0A #d79921
-set $base0B #98971a
-set $base0C #689d6a
-set $base0D #458588
-set $base0E #b16286
-set $base0F #cf5c12
+set $color0 #282828
+set $color1 #1d2021
+set $color2 #928374
+set $color3 #89816d
+set $color4 #3c3c3c
+set $color5 #ebdbb2
+set $color6 #ebdbb2
+set $color7 #a89984
+set $color8 #cc241d
+set $color9 #fabd2f
+set $color10 #d79921
+set $color11 #98971a
+set $color12 #689d6a
+set $color13 #458588
+set $color14 #b16286
+set $color15 #cf5c12
 
 set $background-color #282828
 set $text-color #ebdbb2
@@ -33,9 +33,9 @@ set $accent-color #689d6a
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base05 $base0C $base00 $base0C $base0C
-client.focused_inactive $base01 $base01 $base05 $base03 $base01
-client.unfocused        $base01 $base00 $base05 $base01 $base01
-client.urgent           $base08 $base08 $base00 $base08 $base08
-client.placeholder      $base00 $base00 $base05 $base00 $base00
-client.background       $base07
+client.focused          $color5 $color12 $color0 $color12 $color12
+client.focused_inactive $color1 $color1 $color5 $color3 $color1
+client.unfocused        $color1 $color0 $color5 $color1 $color1
+client.urgent           $color8 $color8 $color0 $color8 $color8
+client.placeholder      $color0 $color0 $color5 $color0 $color0
+client.background       $color7
