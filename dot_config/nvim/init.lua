@@ -8,18 +8,19 @@ local bo = vim.bo
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'sainnhe/gruvbox-material'
 Plug 'sheerun/vim-polyglot'
 Plug 'mattn/emmet-vim'
 Plug('cespare/vim-toml', {branch = 'main'})
 Plug 'elzr/vim-json'
 Plug 'gabrielelana/vim-markdown'
 Plug 'sirtaj/vim-openscad'
+Plug 'leafgarland/typescript-vim'
 Plug 'leafOfTree/vim-svelte-plugin'
 Plug 'digitaltoad/vim-pug'
-Plug 'leafgarland/typescript-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'sainnhe/gruvbox-material'
+Plug 'ryanoasis/vim-devicons'
 
 vim.call('plug#end')
 
@@ -44,14 +45,14 @@ bo.shiftwidth = 2
 bo.tabstop = 2
 
 -- Airline settings
-vim.g['airline#extensions#tabline#enabled'] = 1
+vim.g['airline#extensions#tabline#enabled'] = true
+vim.g['airline_powerline_fonts'] = true
 vim.g['airline_theme'] = 'gruvbox_material'
-vim.g['airline_powerline_fonts'] = 1
 
 -- Theme
 vim.g['gruvbox_material_background'] = 'medium'
-vim.g['gruvbox_material_enable_italic'] = 1
-vim.g['gruvbox_material_disable_italic_comment'] = 1
-vim.g['gruvbox_material_enable_bold'] = 1
+vim.g['gruvbox_material_enable_italic'] = true
+vim.g['gruvbox_material_disable_italic_comment'] = true
+vim.g['gruvbox_material_enable_bold'] = true
 
 vim.cmd 'colo gruvbox-material'
