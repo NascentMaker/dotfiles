@@ -31,6 +31,8 @@ o.laststatus = 2
 o.hlsearch = true
 o.incsearch = true
 o.ignorecase = false
+o.showtabline = 2
+o.showmode = false
 
 -- Window settings
 wo.wrap = false

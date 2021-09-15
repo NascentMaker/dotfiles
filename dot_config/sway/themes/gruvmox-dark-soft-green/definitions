@@ -2,7 +2,7 @@
 set $gtk-theme oomox-gruvmox-dark-soft-green
 set $icon-theme oomox-gruvmox-dark-soft-green
 set $cursor-theme xcursor-breeze-snow
-set $gui-font Cantarell 11
+set $gui-font Roboto 11
 set $term-font FantasqueSansMono Nerd Font Mono 14
 set $kvantum-theme Matchama-Dark
 
