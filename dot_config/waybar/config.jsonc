@@ -37,7 +37,7 @@
 
         // connecting
         "network",
-        "bluetooth",
+        "custom/bluetooth",
 
         // media
         "custom/playerctl",
@@ -46,6 +46,7 @@
         "backlight",
 
         // system
+        "custom/github",
         "custom/sunset",
         "custom/pacman",
 
@@ -171,15 +172,17 @@
         "tooltip": false
     },
 
-    "bluetooth": {
+    "custom/bluetooth": {
+        "interval": 3,
+        "return-type": "json",
         "format": "{icon}",
-        "interval": 30,
         "format-icons": {
-            "enabled": "",
-            "disabled": ""
+            "disabled": "",
+            "enabled": ""
         },
+        "exec": "/bin/sh $HOME/.config/sway/scripts/bluetooth.sh",
         "on-click": "blueberry",
-        "tooltip-format": "{}"
+        "signal": 9,
     },
     
     "sway/language": {
@@ -240,7 +243,7 @@
     },
 
     "custom/playerctl": {
-        "interval": "once",
+        "interval": 10,
         "tooltip": true,
         "return-type": "json",
         "format" : "{icon}",
@@ -248,7 +251,7 @@
             "Playing": "奈",
             "Paused": ""
         },
-        "exec": "playerctl metadata --format '{\"alt\": \"{{status}}\", \"tooltip\": \"{{playerName}}:  {{markup_escape(title)}} - {{markup_escape(artist)}}\" }'",
+        "exec": "playerctl metadata --format '{\"alt\": \"{{status}}\", \"tooltip\": \"{{markup_escape(title)}} - {{markup_escape(artist)}}\" }'",
         "on-click": "playerctl play-pause; pkill -RTMIN+5 waybar",
         "on-click-right": "playerctl next; pkill -RTMIN+5 waybar",
         "on-scroll-up": "playerctl position 10+; pkill -RTMIN+5 waybar",
