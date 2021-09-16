@@ -5,6 +5,12 @@
 # Suppress built-in key bindings, and specify them explicitly in this
 # config file.
 suppress_default_binds = true
+overlay = true
+overlay_font = FantasqueSansMono Nerd Font Mono:10
+overlay_text_color = ffffff
+overlay_text_alpha = c3
+overlay_background_color = 282828
+overlay_background_alpha = 9e
 
 [aliases]
 # Define aliases here. Any arguments passed to an alias are appended to the
@@ -62,3 +68,6 @@ t = slideshow +1
 
 # background
 <Shift+W> = exec cp -f "$imv_current_file" ~/.cache/wallpaper && swaymsg output "*" background ~/.cache/wallpaper fill
+
+# Gruvbox Factory
+<Ctrl+g> = exec gruvbox-factory "$imv_current_file"
