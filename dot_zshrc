@@ -12,3 +12,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 alias vim="nvim"
+alias cz="chezmoi"
+alias cgp="chezmoi git push"
+alias cgs="chezmoi git status"
+alias cgc="chezmoi git commit"
