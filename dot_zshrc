@@ -13,6 +13,7 @@ fi
 
 alias vim="nvim"
 alias cz="chezmoi"
-alias cgp="chezmoi git push"
-alias cgs="chezmoi git status"
-alias cgc="chezmoi git commit"
+alias czg="chezmoi git"
+alias czgp="chezmoi git push"
+alias czgs="chezmoi git status"
+alias czgc="chezmoi git commit"
