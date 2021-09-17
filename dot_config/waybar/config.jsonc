@@ -87,7 +87,7 @@
             "warning": 70,
             "critical": 90
         },
-        "on-click": "swaymsg exec \\$term_float htop"
+        "on-click": "swaymsg exec \\$term_float btm"
     },
 
     "memory": {
@@ -97,7 +97,7 @@
             "warning": 70,
             "critical": 90
         },
-        "on-click": "swaymsg exec \\$term_float htop"
+        "on-click": "swaymsg exec \\$term_float btm"
     },
 
     "network": {
@@ -169,7 +169,7 @@
 
     "custom/menu": {
         "format": "",
-        "on-click": "swaymsg exec \\$menu",
+        "on-click": "swaymsg exec \\$app_menu",
         "tooltip": false
     },
 
