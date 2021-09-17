@@ -29,6 +29,7 @@
     "modules-right": [
         // informational
         "sway/language",
+        "keyboard-state",
         "custom/github",
         "cpu",
         "memory",
@@ -73,7 +74,7 @@
 
     "clock": {
         "interval": 60,
-        "format": "{:%e %b %Y %H:%M}",
+        "format": "  {:%e %b %Y %H:%M}",
         "tooltip": true,
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>",
         "on-click": "swaymsg exec \\$term_float khal interactive"
@@ -243,11 +244,11 @@
     },
 
     "custom/playerctl": {
-        "interval": 5,
+        "interval": 3,
         "tooltip": true,
         "return-type": "json",
         "format" : "{alt}",
-        "exec": "spt pb -s -f '{\"alt\":\"%f%s %t - %a\", \"tooltip\":\"%f%s %t - %a\" }'",
+        "exec": "spt pb -s -f '{\"alt\":\"%f %s %t - %a\", \"tooltip\":\"%f %s %t - %a\" }'",
         "exec-if": "command -v spt >/dev/null && spt pb 2>&1 | test $? -eq 0",
         "on-click-right": "spt pb -t",
         "on-click": "swaymsg exec \"\\$term_float spt\"",
