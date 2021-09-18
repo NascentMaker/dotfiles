@@ -20,21 +20,21 @@
     "modules-left": [
         "custom/menu",
         "sway/workspaces",
-        "custom/scratchpad"
-    ],
-    "modules-center": [
+        "custom/scratchpad",
         "custom/wf-recorder",
         "sway/mode"
     ],
+    "modules-center": [
+        "sway/window"
+    ],
     "modules-right": [
+        "tray",
+
         // informational
         "sway/language",
         "keyboard-state",
         "custom/github",
         "cpu",
-        "memory",
-        "battery",
-        "temperature",
 
         // connecting
         "network",
@@ -51,7 +51,6 @@
         "custom/sunset",
         "custom/pacman",
 
-        "tray",
         "clock",
     ],
 
@@ -114,6 +113,10 @@
         "tooltip": false
     },
 
+    "sway/window": {
+        "max-length": 50
+    },
+
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -154,8 +157,8 @@
     },
 
     "tray": {
-        "icon-size": 21,
-        "spacing": 5
+        "icon-size": 16,
+        "spacing": 8
     },
 
     "custom/pacman": {
@@ -244,7 +247,7 @@
     },
 
     "custom/playerctl": {
-        "interval": 3,
+        "interval": 60,
         "tooltip": true,
         "return-type": "json",
         "format" : "{alt}",
