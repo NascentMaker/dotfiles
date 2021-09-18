@@ -1,0 +1,51 @@
+/* import css definitions for current theme */
+@import url("theme.css");
+
+* {
+    background-image: none;
+}
+window {
+    background-color: @transparent_background_color;
+}
+button {
+    color: @background_color;
+    background-color: @accent_color;
+    border-color: @transparent_background_color;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+    background-color: @bright_text_color;
+    color: @background_color;
+    outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/assets/lock.svg"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/assets/logout.svg"));
+    background-position: 55% 50%;
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/assets/suspend.svg"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/assets/hibernate.svg"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/assets/shutdown.svg"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/assets/reboot.svg"));
+}
