@@ -56,28 +56,30 @@
 #waybar {
     background: @theme_bg_color;
     color: @wm_icon_bg;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Each module */
-#custom-pacman,
-#custom-menu,
-#custom-help,
-#custom-scratchpad,
-#bluetooth,
+#backlight,
 #battery,
 #clock,
 #cpu,
+#custom-bluetooth,
+#custom-github,
+#custom-help,
+#custom-menu,
+#custom-pacman,
+#custom-playerctl,
+#custom-scratchpad,
+#custom-sunset,
+#idle_inhibitor,
+#keyboard-state,
+#language,
 #memory,
 #mode,
 #network,
 #pulseaudio,
 #temperature,
-#idle_inhibitor,
-#backlight,
-#language,
-#custom-sunset,
-#custom-playerctl,
 #tray {
     padding-left: 10px;
     padding-right: 10px;
@@ -119,6 +121,7 @@
 #clock {
     font-weight: bold;
     background-color: @theme_selected_bg_color;
+    padding-left: 12px;
 }
 
 #cpu.warning {
@@ -168,6 +171,8 @@
 }
 
 #window {
+    font-family: "FantasqueSansMono Nerd Font";
+    font-size: 14px;
     font-weight: bold;
     margin-right: 25px;
     color: @theme_selected_bg_color;
@@ -197,7 +202,7 @@
     color: @warning_color;
 }
 
-#bluetooth.disabled {
+#custom-bluetooth.disabled {
     color: @warning_color;
 }
 
