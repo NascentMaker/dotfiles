@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-swaymsg exec "$(sway-launcher-desktop)"
+swaymsg exec "$(HIST_FILE='' TERMINAL_COMMAND='footclient' sway-launcher-desktop)"
